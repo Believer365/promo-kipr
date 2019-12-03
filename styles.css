@@ -4,6 +4,7 @@
 body {
     background: linear-gradient(103.82deg, rgba(0, 0, 0, 0.7) 14.23%, rgba(0, 0, 0, 0) 95.99%), url(assets/img/promo-kipr-bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
 }
@@ -16,7 +17,6 @@ body {
     max-width: 1140px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 130px;
 }
 
 .row {
@@ -61,20 +61,8 @@ p {
     text-transform: uppercase;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-underline {
-    border-bottom: 2px solid #dbdbdb;
-}
-
-a:hover {
-    color: #3c00ec;
+.promo {
+    padding-top: 130px;
 }
 
 .title {
@@ -114,7 +102,7 @@ a:hover {
 .features-list li:before {
     content: url("assets/img/filre.png");
     position: absolute;
-    left: -35px;
+    left: -40px;
 }
 
 .block-form {
@@ -145,8 +133,12 @@ a:hover {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    color: rgba(0, 0, 0, 0.6);
+    color: #000;
     margin-bottom: 45px;
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .form-text {
@@ -171,39 +163,22 @@ a:hover {
 
 .styled-checkbox + label:before {
     content: "";
-    margin-right: 10px;
+    margin-right: 20px;
     display: inline-block;
     vertical-align: text-top;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border: 2px solid #42868F;
-    box-sizing: border-box;
     border-radius: 4px;
 }
 
 .styled-checkbox:hover + label:before {
-    background: #f35429;
-}
-
-.styled-checkbox:focus + label:before {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    background: rgba(8, 96, 108, 0.2);
 }
 
 .styled-checkbox:checked + label:before {
-    background: #f35429;
-}
-
-.styled-checkbox:checked + label:after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 9px;
-    background: white;
-    width: 2px;
-    height: 2px;
-    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    background: #2E686F;
+    content: url("assets/img/checked.png");
 }
 
 .checkboxes {
@@ -212,7 +187,8 @@ a:hover {
     list-style-type: none;
     columns: 2;
 }
-.checkboxes li{
+
+.checkboxes li {
     margin-bottom: 10px;
 }
 
@@ -231,4 +207,56 @@ a:hover {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.form-button:hover {
+    background: #4EA0AB;
+}
+
+@media screen and (max-width: 1366px) {
+    .promo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .promo{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .features-list{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-height: 768px) {
+    .col-6{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-6{
+        width: 100%;
+    }
+    body{
+        background-position: center;
+    }
+    .hidden-mobile{
+        display: none;
+    }
+    .promo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .block-form{
+        padding: 15px;
+        box-shadow: none;
+    }
+    .block-text{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .features-list li{
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
