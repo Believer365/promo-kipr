@@ -1,0 +1,234 @@
+/*** ALL ***/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900&display=swap&subset=cyrillic');
+
+body {
+    background: linear-gradient(103.82deg, rgba(0, 0, 0, 0.7) 14.23%, rgba(0, 0, 0, 0) 95.99%), url(assets/img/promo-kipr-bg.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 130px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33.33333%;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+em,
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #211e1c;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-underline {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+a:hover {
+    color: #3c00ec;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 1;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.title img {
+    position: absolute;
+    bottom: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.features-list {
+    margin-top: 130px;
+    list-style: none;
+}
+
+.features-list li {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.features-list li:before {
+    content: url("assets/img/filre.png");
+    position: absolute;
+    left: -35px;
+}
+
+.block-form {
+    background: #FEFEFE;
+    box-shadow: 12px 24px 25px rgba(0, 0, 0, 0.31);
+    border-radius: 4px;
+    padding: 60px;
+}
+
+.block-form__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #333333;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #42868F;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 45px;
+}
+
+.form-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.045em;
+    color: rgba(12, 11, 11, 0.7);
+    margin-bottom: 20px;
+}
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.styled-checkbox + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #42868F;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.styled-checkbox:hover + label:before {
+    background: #f35429;
+}
+
+.styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked + label:before {
+    background: #f35429;
+}
+
+.styled-checkbox:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkboxes {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style-type: none;
+    columns: 2;
+}
+.checkboxes li{
+    margin-bottom: 10px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.045em;
+    color: #FFFFFF;
+    background: #42868F;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
