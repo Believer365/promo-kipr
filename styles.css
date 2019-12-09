@@ -73,6 +73,12 @@ p {
     position: relative;
 }
 
+.title-mobile {
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
 .title img {
     position: absolute;
     bottom: 10px;
@@ -83,6 +89,18 @@ p {
     font-size: 36px;
     line-height: 49px;
     color: #FFFFFF;
+}
+
+.subtitle img {
+    position: absolute;
+    bottom: 10px;
+}
+
+.subtitle-mobile {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .features-list {
@@ -208,6 +226,9 @@ p {
     outline: none;
     cursor: pointer;
 }
+.show-mobile{
+    display: none;
+}
 
 .form-button:hover {
     background: #4EA0AB;
@@ -252,11 +273,38 @@ p {
         box-shadow: none;
     }
     .block-text{
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .features-list {
+        margin-top: 100px;
     }
     .features-list li{
         font-size: 18px;
         line-height: 25px;
+    }
+    .show-mobile{
+        display: block;
+    }
+    .mobile-promo-text{
+        text-align: center;
+        margin-top: 85px;
+    }
+    .newsletter-title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 50px;
+    }
+    .to-bottom{
+        display: block;
+        margin: 20px auto 50px auto;
+        cursor: pointer;
+    }
+    .form{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
