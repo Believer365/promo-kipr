@@ -308,3 +308,16 @@ p {
         padding-right: 20px;
     }
 }
+.checkbox-divs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.checkbox-divs div{
+    width: 50%;
+    margin-bottom: 10px;
+}
+._error-inner{
+    color: red;
+}
