@@ -404,8 +404,8 @@ p {
     margin-bottom: 20px;
 }
 .checkbox-divs div{
-    width: 50%;
-    margin-bottom: 10px;
+    width: 50% !important;
+    margin-bottom: 10px!important;
 }
 ._error-inner{
     color: #8F4242;
