@@ -363,6 +363,7 @@ p {
     }
     .features-list {
         margin-top: 70px;
+        margin-bottom: 50px;
     }
     .features-list li{
         font-size: 18px;
@@ -395,6 +396,11 @@ p {
     }
     #_form_1_ ._error._above{
         bottom: 0!important;
+    }
+    .block-form__title{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 .checkbox-divs{
