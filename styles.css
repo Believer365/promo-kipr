@@ -811,3 +811,16 @@ p {
         left: 13px;
     } */
 }
+/*adaptive*/
+@media(min-width:1668px){
+	body{
+		 display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.container.promo > .row > .block-text{
+		margin-right: 60px;
+	}
+}
