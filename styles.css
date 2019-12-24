@@ -735,7 +735,7 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
 
     body {
         background-position: 33% center;
@@ -823,6 +823,14 @@ p {
 		display: block;
 		float: left;
 	}
+	.form-input {
+		width: 98%;
+	}
+}
+@media (max-width: 400px){
+	.subtitle-mobile img {
+		top: -8px;
+	}
 	.features-list li:before {
 		left: -30px;
 		content: "";
@@ -831,15 +839,6 @@ p {
 		top: 2px;
 		background-size: 17px 17px;
 	}
-	.subtitle-mobile img {
-		top: -3px;
-		right: -44px;
-	}
-	.form-input {
-		width: 98%;
-	}
-}
-@media (max-width: 400px){
 	.title-mobile {
 		margin-right: 62px;
 		font-size: 48px;
