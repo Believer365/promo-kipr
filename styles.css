@@ -904,4 +904,9 @@ p {
 	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12:nth-child(2) {
 		margin-top: 15vh;
 	}
+	.form_filled .block-form{
+		margin: 0 auto;
+		width: 70%;
+		display: block;
+	}
 }
