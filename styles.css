@@ -826,6 +826,9 @@ p {
 	.form-input {
 		width: 98%;
 	}
+	.subtitle-mobile img {
+		top: -3px;
+	}
 }
 @media (max-width: 400px){
 	.subtitle-mobile img {
@@ -845,6 +848,7 @@ p {
 	}
 	.features-list {
 		padding-left: 27px;
+		width: auto;
 	}
 	.subtitle-mobile {
 		font-size: 18px;
@@ -865,5 +869,8 @@ p {
 	}
 	.checkbox-divs {
 		height: auto;
+	}
+	.mobile-promo-text {
+		margin-left: 12%;
 	}
 }
