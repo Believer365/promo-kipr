@@ -832,18 +832,18 @@ p {
 	.form_filled .features-list{
 		display:none;
 	}
-	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12{
-		padding: 15px;
+	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12:nth-child(2) {
 		margin-top: 15vh;
 	}
 	.form_filled .block-form{
 		margin: 0 auto;
-		width: 91%;
+		width: 70%;
+		display: block;
 	}
 	.form_filled .block-text{
 		background: none !important;
 	}
-	.form_filled body{
+	.form_filled{
 		height: 100vh;
 		background: url(assets/img/promo-kipr-bg.jpg) !important;
 	}
@@ -890,5 +890,18 @@ p {
 	}
 	.mobile-promo-text {
 		margin-left: 12%;
+	}
+	.form_filled .features-list{
+		display:none;
+	}
+	.form_filled .block-text{
+		background: none !important;
+	}
+	.form_filled{
+		height: 100vh;
+		background: url(assets/img/promo-kipr-bg.jpg) !important;
+	}
+	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12:nth-child(2) {
+		margin-top: 15vh;
 	}
 }
