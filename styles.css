@@ -24,7 +24,18 @@
 #_form_1_ ._form_element._clear { clear:both; width:100%; float:none; }
 #_form_1_ ._form_element._clear:after { clear:left; }
 #_form_1_ ._form_element input[type="text"],#_form_1_ ._form_element input[type="date"],#_form_1_ ._form_element select,#_form_1_ ._form_element textarea:not(.g-recaptcha-response) { display:block; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }*/
-
+@media screen and (min-width: 1668px){
+	body{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.container.promo > .row > .block-text{
+		margin-right: 60px;
+	}
+}
 #_form_1_ ._field-wrapper {
     position: relative;
 }
@@ -812,15 +823,3 @@ p {
     } */
 }
 /*adaptive*/
-@media screen and (min-width: 1668px){
-	body{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.container.promo > .row > .block-text{
-		margin-right: 60px;
-	}
-}
