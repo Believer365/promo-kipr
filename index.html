@@ -153,6 +153,7 @@
                             form.querySelector('._form-content').style.display = 'none';
                             thank_you.innerHTML = message;
                             thank_you.style.display = 'block';
+							document.querySelector('body').classList.add('form_filled');
                             if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
                                 // Site tracking URL to use after inline form submission.
                                 _load_script(trackcmp_url);

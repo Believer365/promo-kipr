@@ -873,4 +873,18 @@ p {
 	.mobile-promo-text {
 		margin-left: 12%;
 	}
+	.form_filled .features-list{
+		display:none;
+	}
+	.form_filled .features-list{
+		height: 100vh;
+	}
+	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12{
+		padding: 15px;
+		margin-top: 15vh;
+	}
+	.form_filled .block-form{
+		margin: 0 auto;
+		width: 91%;
+	}
 }
