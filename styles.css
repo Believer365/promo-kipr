@@ -394,11 +394,6 @@ p {
 .text-uppercase {
     text-transform: uppercase;
 }
-
-.promo {
-    padding-top: 130px;
-}
-
 .title {
     font-weight: 700;
     font-size: 96px;
@@ -812,7 +807,7 @@ p {
     } */
 }
 /*adaptive*/
-
+@media (min-width: 1668px){
 	body{
 		display: flex;
 		flex-direction: row;
@@ -823,3 +818,4 @@ p {
 	.container.promo > .row > .block-text{
 		margin-right: 60px;
 	}
+}
