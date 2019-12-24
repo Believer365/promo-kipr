@@ -812,9 +812,9 @@ p {
     } */
 }
 /*adaptive*/
-@media(min-width:1668px){
+@media(screen and min-width: 1668px){
 	body{
-		 display: flex;
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
