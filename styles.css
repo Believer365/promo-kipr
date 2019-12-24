@@ -815,7 +815,7 @@ p {
 		margin-right: 60px;
 	}
 }
-@media (min-width: 376px and max-width:1099px){
+@media (min-width: 376px) and (max-width:1099px){
 	span.subtitle-mobile.text-uppercase:before {
 		content: "";
 		width: 13px;
@@ -832,11 +832,15 @@ p {
 		background-size: 17px 17px;
 	}
 	.subtitle-mobile img {
+		top: -3px;
 		right: -44px;
 	}
 	.title-mobile {
 		margin-right: 62px;
 		font-size: 48px;
+	}
+	.form-input {
+		width: 98%;
 	}
 }
 @media (max-width: 375px){
