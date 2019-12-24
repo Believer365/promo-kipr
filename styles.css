@@ -814,7 +814,9 @@ p {
 	.container.promo > .row > .block-text{
 		margin-right: 60px;
 	}
-		span.subtitle-mobile.text-uppercase:before {
+}
+@media (min-width: 376px and max-width:1099px){
+	span.subtitle-mobile.text-uppercase:before {
 		content: "";
 		width: 13px;
 		height: 45px;
@@ -831,6 +833,10 @@ p {
 	}
 	.subtitle-mobile img {
 		right: -44px;
+	}
+	.title-mobile {
+		margin-right: 62px;
+		font-size: 48px;
 	}
 }
 @media (max-width: 375px){
@@ -850,9 +856,6 @@ p {
 		height: 33px;
 		display: block;
 		float: right;
-	}
-	.title-mobile {
-		margin-right: 48px;
 	}
 	.form-input {
 		width: 93%;
