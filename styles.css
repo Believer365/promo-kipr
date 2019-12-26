@@ -937,6 +937,11 @@ p {
 }
 @media screen and (max-width: 450px){
 	.checkbox-divs {
+		height: 245px;
+	}
+}
+@media screen and (max-width: 350px){
+	.checkbox-divs {
 		height: auto;
 	}
 }
