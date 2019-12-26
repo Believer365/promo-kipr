@@ -330,7 +330,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900&display=swap&subset=cyrillic');
 
 body {
-    overflow-x: hidden;
     background: url(assets/img/promo-kipr-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +339,7 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+
 }
 
 * {
@@ -473,7 +472,8 @@ p {
     background: #FEFEFE;
     box-shadow: 12px 24px 25px rgba(0, 0, 0, 0.31);
     border-radius: 4px;
-    padding: 50px;
+    padding: 40px;
+    box-sizing: border-box;
     width: 450px;
     display: inline-block;
 }
@@ -504,7 +504,8 @@ p {
     font-size: 16px;
     line-height: 22px;
     color: #000;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+	box-sizing: border-box;
 }
 
 .form-input::placeholder {
@@ -518,6 +519,7 @@ p {
     letter-spacing: 0.045em;
     color: rgba(12, 11, 11, 0.7);
     margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 .styled-checkbox {
@@ -589,23 +591,17 @@ p {
     background: #4EA0AB;
 }
 
-.form-text {
-    margin-left: 10px;
-}
-
 .checkbox-divs {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 20px;
     flex-direction: column;
     height: 240px;
-    margin-left: 10px;
 }
 
 .checkbox-divs div {
     display: inline-block;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
 }
 
 ._error-inner {
@@ -646,21 +642,22 @@ p {
 
     .block-text {
         width: 100%;
-        padding-left: 43px;
-        padding-right: 50px;
         background: linear-gradient(rgba(0, 0, 0, 0) 1.68%, rgba(0, 0, 0, 0.6497) 68.91%), url(assets/img/promo-kipr-bg.jpg);
         background-position: 40% 30%;
         text-align: center;
     }
 
     .block-form {
-        width: calc(100vw - 60px);
-        padding: 30px;
-        box-shadow: none;
-        margin-bottom: 50px;
-
+        padding: 40px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		box-sizing: border-box;
+		box-shadow: none;
+		width: 100%;
     }
-
+	.form_filled .col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12:nth-child(2) {
+		width: 100%;
+	}
     .title-mobile {
         margin-top: 25px;
     }
@@ -698,14 +695,13 @@ p {
 
     .block-form__title {
         font-size: 18px;
-        margin-top: 10px;
         margin-bottom: 30px;
         letter-spacing: 0.045em;
     }
 
     .features-list {
         margin-top: 25px;
-        margin-bottom: 100px;
+        margin-bottom: 25px;
         text-align: left;
     }
 }
@@ -816,15 +812,27 @@ p {
 	}
 }
 @media (min-width: 400px) and (max-width:1099px){
+	#_form_1_ ._error-inner {
+		padding: 0;
+		background-color: white;
+		font-size: 14px;
+		font-family: arial, sans-serif;
+		color: #A46968;
+		text-align: center;
+		text-decoration: none;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	#_form_1_ ._error._above ._error-arrow {
+		display: none;
+	}
 	span.subtitle-mobile.text-uppercase:before {
 		content: "";
 		width: 13px;
 		height: 45px;
 		display: block;
 		float: left;
-	}
-	.form-input {
-		width: 98%;
 	}
 	.subtitle-mobile img {
 		top: -3px;
@@ -849,8 +857,26 @@ p {
 	}
 }
 @media (max-width: 400px){
+	#_form_1_ ._error-inner {
+		padding: 0;
+		background-color: white;
+		font-size: 14px;
+		font-family: arial, sans-serif;
+		color: #A46968;
+		text-align: center;
+		text-decoration: none;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	#_form_1_ ._error._above ._error-arrow {
+		display: none;
+	}
 	.subtitle-mobile img {
 		top: -8px;
+	}
+	.features-list li {
+		margin-bottom: 5px;
 	}
 	.features-list li:before {
 		left: -30px;
@@ -882,14 +908,8 @@ p {
 		display: block;
 		float: right;
 	}
-	.form-input {
-		width: 93%;
-	}
 	.checkbox-divs {
 		height: auto;
-	}
-	.mobile-promo-text {
-		margin-left: 12%;
 	}
 	.form_filled .features-list{
 		display:none;
