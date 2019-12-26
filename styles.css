@@ -875,6 +875,9 @@ p {
 	#_form_1_ ._error._below ._error-arrow {
 		display: none;
 	}
+	#_form_1_ ._error._above ._error-arrow {
+		display: none;
+	}
 	.subtitle-mobile img {
 		top: -8px;
 	}
