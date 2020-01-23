@@ -472,9 +472,9 @@ p {
     background: #FEFEFE;
     box-shadow: 12px 24px 25px rgba(0, 0, 0, 0.31);
     border-radius: 4px;
-    padding: 40px;
+    padding: 55px;
     box-sizing: border-box;
-    width: 450px;
+    width: 35em;
     display: inline-block;
 }
 
@@ -570,7 +570,7 @@ p {
     width: 100%;
     padding: 15px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.045em;
@@ -596,12 +596,12 @@ p {
     flex-wrap: wrap;
     margin-bottom: 20px;
     flex-direction: column;
-    height: 240px;
+    height: 250px;
 }
 
 .checkbox-divs div {
     display: inline-block;
-    margin-bottom: 15px !important;
+    margin-bottom: 12px !important;
 }
 
 ._error-inner {
@@ -623,9 +623,23 @@ p {
 
 @media screen and (max-width: 1100px) {
 
+    ._button-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form-button{
+        width: 70%;
+    }
+
+    .form-text{
+        padding: 20px;
+    }
+
     .checkbox-divs {
         height: 160px;
         width: 100%;
+        padding: 20px;
     }
 
     body {
@@ -642,9 +656,10 @@ p {
 
     .block-text {
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0) 1.68%, rgba(0, 0, 0, 0.6497) 68.91%), url(assets/img/promo-kipr-bg.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0) 1.68%, rgba(0, 0, 0, 0.6497) 500%), url(assets/img/promo-kipr-bg.jpg);
         background-position: 40% 30%;
         text-align: center;
+        background-size: cover;
     }
 
     .block-form {
@@ -711,7 +726,7 @@ p {
         font-size: 18px;
     }
 	.features-list li {
-		margin-bottom: 5px;
+		margin-bottom: 12px;
 	}
 }
 
@@ -743,7 +758,7 @@ p {
 
     .features-list li {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 18px;
         letter-spacing: 0.01em;
     }
 
@@ -760,6 +775,10 @@ p {
 
     .show-mobile {
         padding: 0;
+    }
+    
+    .form-button{
+        font-size: 14px;
     }
 
     .checkbox-divs {
@@ -822,7 +841,12 @@ p {
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
-	}
+    }
+    .block-form{
+        padding: 100px;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
 	#_form_1_ ._error._above ._error-arrow {
 		display: none;
 	}
